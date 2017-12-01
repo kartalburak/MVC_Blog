@@ -1,0 +1,9 @@
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.Domain\bin\Debug\Blog.Domain.dll
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.Domain\bin\Debug\Blog.Domain.pdb
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.Domain\obj\Debug\Blog.Domain.dll
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.Domain\obj\Debug\Blog.Domain.pdb
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.Domain\bin\Debug\Blog.DAL.dll
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.Domain\bin\Debug\EntityFramework.dll
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.Domain\bin\Debug\Blog.DAL.pdb
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.Domain\bin\Debug\EntityFramework.xml
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.Domain\obj\Debug\Blog.Domain.csprojResolveAssemblyReference.cache

@@ -1,0 +1,15 @@
+﻿@model List<Blog.Domain.Core.Etiket>
+
+<h3>Etiketler</h3>
+
+    <div class="tags-cloud">
+        @foreach (var e in Model)
+        {
+            <div class="tag">@Html.ActionLink(e.Icerik,"MakalelerByEtiket",new { etiketID=e.ID})</div>
+        }
+    </div>
+
+
+
+
+

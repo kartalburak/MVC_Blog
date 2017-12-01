@@ -1,0 +1,12 @@
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.DAL\bin\Debug\Blog.DAL.dll.config
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.DAL\bin\Debug\Blog.DAL.dll
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.DAL\bin\Debug\Blog.DAL.pdb
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.DAL\bin\Debug\Blog.Domain.dll
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.DAL\bin\Debug\EntityFramework.dll
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.DAL\bin\Debug\Blog.Domain.pdb
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.DAL\bin\Debug\EntityFramework.xml
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.DAL\obj\Debug\Blog.DAL.csprojResolveAssemblyReference.cache
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.DAL\obj\Debug\Blog.DAL.dll
+C:\Users\seri\Documents\Visual Studio 2015\Projects\MVC.Net9.Blog\Blog.DAL\obj\Debug\Blog.DAL.pdb

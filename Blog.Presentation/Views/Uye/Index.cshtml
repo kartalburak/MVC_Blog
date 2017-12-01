@@ -1,0 +1,33 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<input id="listele" type="submit" value="Üyeleri Listele" />
+
+
+<div id="divuyelistesi"><h2>Tüm  Üyeler</h2></div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('#listele').click(function () {
+            $.getJSON('/Uye/UyeListesi').done(function (data) {
+                var Uyeler = "";
+                $.each(data, function (key, uye) {
+                    Uyeler += "Üye : " + uyeAdSoyad + " Email :" + uye.email + "<br />";
+                    //$('#divuyelistesi').append(key+1)
+                });
+                $('#divuyelistesi').html(Uyeler);
+            });
+
+        });
+    });
+
+
+
+</script>
+

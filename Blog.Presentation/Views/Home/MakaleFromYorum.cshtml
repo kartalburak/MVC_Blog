@@ -1,0 +1,59 @@
+﻿@model Blog.Domain.Core.Makale
+
+@{
+    ViewBag.Title = "MakaleFromYorum";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="masonry-grid-Model col-sm-6">
+    <!--blogspot start -->
+    <article class="clearfix blogpost">
+        <div class="overlay-container">
+            <img src="~/Content/images/@Model.Resim" alt="">
+            <div class="overlay">
+                <div class="overlay-links">
+                    <a href="#"><i class="fa fa-link"></i></a>
+                    <a href="~/Content/images/@Model.Resim" class="popup-img-single" title="@Model.Baslik"><i class="fa fa-search-plus"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="blogpost-body">
+            <div class="post-info">
+                <span class="day">@Model.Tarih.Day</span>
+                @{
+                    string[] aylar = { "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık" };
+                }
+                <span class="month">@aylar[Model.Tarih.Month - 1] &nbsp; @Model.Tarih.Year</span>
+            </div>
+            <div class="blogpost-content">
+                <header>
+                    <h2 class="title">@Model.Baslik</h2>
+                    @{
+                        string adsoyad = Model.Uye.Ad + "" + Model.Uye.Soyad;
+                    }
+                    <div class="submitted"><i class="fa fa-user pr-5"></i> by <a href="#">@adsoyad</a></div>
+                </header>
+                @*<p>@Model.Icerik</p>*@
+                <p>@Html.Raw(Model.Icerik)</p>
+            </div>
+        </div>
+        <footer class="clearfix">
+            <ul class="links pull-left">
+                @{
+                    int yorumsayısı = Model.Yorumlar.Count();
+                }
+
+                <li><i class="fa fa-comment-o pr-5"></i> <a href="#">@yorumsayısı &nbsp; yorum</a> |</li>
+                @{
+                    int etiket = Model.Etiketler.Count();
+                }
+                <li><i class="fa fa-tags pr-5"></i> <a href="#">@etiket</a></li>
+            </ul>
+            <a class="pull-right link" href="#"><span>devam...</span></a>
+        </footer>
+    </article>
+    <!-- blogpost end -->
+</div>
+
+

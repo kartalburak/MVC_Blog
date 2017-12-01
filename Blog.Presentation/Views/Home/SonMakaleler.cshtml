@@ -1,0 +1,54 @@
+﻿@model List<Blog.Domain.Core.Makale>
+
+@foreach (var item in Model)
+{
+    <div class="masonry-grid-item col-sm-6">
+        <!--blogspot start -->
+        <article class="clearfix blogpost">
+            <div class="overlay-container">
+                <img src="~/Content/images/@item.Resim" alt="">
+                <div class="overlay">
+                    <div class="overlay-links">
+                        <a href="#"><i class="fa fa-link"></i></a>
+                        <a href="~/Content/images/@item.Resim" class="popup-img-single" title="@item.Baslik"><i class="fa fa-search-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blogpost-body">
+                <div class="post-info">
+                    <span class="day">@item.Tarih.Day</span>
+                    @{
+                        string[] aylar = { "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık" };
+                    }
+                    <span class="month">@aylar[item.Tarih.Month - 1] &nbsp; @item.Tarih.Year</span>
+                </div>
+                <div class="blogpost-content">
+                    <header>
+                        <h2 class="title">@item.Baslik</h2>
+                        @{
+                            string adsoyad = item.Uye.Ad + "" + item.Uye.Soyad;
+                        }
+                        <div class="submitted"><i class="fa fa-user pr-5"></i> by <a href="#">@adsoyad</a></div>
+                    </header>
+                    @*<p>@item.Icerik</p>*@
+                    <p>@Html.Raw(item.Icerik)</p>
+                </div>
+            </div>
+            <footer class="clearfix">
+                <ul class="links pull-left">
+                    @{
+                        int yorumsayısı = item.Yorumlar.Count();
+                    }
+
+                    <li><i class="fa fa-comment-o pr-5"></i> <a href="#">@yorumsayısı &nbsp; yorum</a> |</li>
+                    @{
+                        int etiket = item.Etiketler.Count();
+                    }
+                    <li><i class="fa fa-tags pr-5"></i> <a href="#">@etiket</a></li>
+                </ul>
+                <a class="pull-right link" href="#"><span>devam...</span></a>
+            </footer>
+        </article>
+        <!-- blogpost end -->
+    </div>
+                        }
